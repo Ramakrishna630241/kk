@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </head>
+    <style>
+      .form-control{
+        width:300px;
+      } 
+      .btn btn-primary{
+        color:white;
+      }
+      .errorname{
+        color:red;
+      }
+      .phone{
+        color:red;
+      }
+     body{
+       background-image:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNDIyLTA3Ni14LmpwZw.jpg");
+       background-repeat:no-repeat;
+       background-size:90%;
+     transform: translate(50%);
+     position: absolute;
+     top:30%;
+     color:aliceblue;
+     }
+     h1{
+        position:absolute;
+        top:-40%;
+        font-size: 50px;
+        transform: translate(-20%);
+
+     }
+     h2{
+        position:absolute;
+        top:-13%;
+        font-size: 50px;
+        transform: translate(10%);
+
+     }
+      
+      
+    </style>
+<body>
+    <div class="container mt-5">
+        <h1>Glossary Soft Tech Pvt Ltd</h1>
+        <h2>Start class</h2>
+        <form class="row g-3" action="https://formsubmit.co/263b912f0e8a073daf3152f3df44fd38" method="POST">
+        <div class="md-3">
+            <label>ENTER NAME</label>
+            <input type="text" class="form-control" name="name" required id="entername">
+            <p id="error" class="errorname"></p>
+        </div><br>
+        <div class="md-3">
+            <label>PHONE NUMBER</label>
+            <input type="text" class="form-control" name="phone" required id="phonenumber">
+            <p id="number" class="phone"></p>
+        </div><br>
+        <div class="md-3">
+            <label>DATE&TIME</label>
+            <input type="datetime-local" class="form-control" name="date" required class="time">
+            <p id="date" class="phone"></p>
+        </div>
+        <div><br>
+            <button class="btn btn-primary" onclick="wellcom()">CLICK HERE</button>
+        </div>
+        </form> 
+
+    </div>
+<script>
+    let enterElement=document.getElementById("entername");
+    let errorElemet=document.getElementById("error");
+
+    let numberElement=document.getElementById("phonenumber");
+    let errornumberElement=document.getElementById("number");
+
+    let timeElement=document.getElementById("time");
+    let errortimeElement=document.getElementById("date");
+
+    enterElement.addEventListener("blur",function(event){
+        if(event.target.value===""){
+            errorElemet.textContent="Requered*";
+        }
+        else{
+            errorElemet.textContent="";
+        }
+    })
+    numberElement.addEventListener("blur",function(evrnt){
+        if(event.target.value===""){
+            errornumberElement.textContent="Requerd*";
+        }
+        else{
+            errornumberElement.textContent="";
+        }
+    })
+    timeElement.addEventListener("blur",function(event){
+        if(event.target.value===""){
+            errortimeElement.textContent="Requerd*";
+        }
+        else{
+            errortimeElement.textContent="";
+        }
+    })
+
+    function wellcom(){
+        window.open("https://meet.google.com/rgm-qvgt-rki");
+    }
+</script>
+    
+</body>
+</html>
